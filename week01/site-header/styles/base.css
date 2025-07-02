@@ -1,0 +1,107 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    grid-template-rows: 1fr;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: purple;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    color: purple;
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    font-size: 2rem;
+}
+
+.current a {
+    background-color: rgb(236, 172, 255);
+}
+
+li {
+    list-style-type: none;
+    font-size: 2em;
+    padding: 0;
+    margin: .8rem 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation a:hover {
+    background-color: purple;
+    color: rgb(255, 255, 255);
+}
+
+footer {
+    display: block;
+    text-align: center;
+    background-color: #eee;
+    padding: 1rem 0;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: #bbb;
+}
+
+.social a {
+    margin: 0 .5rem;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    border: 1px solid #ccc;
+}

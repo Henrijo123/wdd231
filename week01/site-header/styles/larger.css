@@ -1,0 +1,37 @@
+@media only screen and (min-width: 500px) {
+
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    header {
+        grid-template-columns: 24px auto;
+    }
+
+    .navigation ul {
+        font-size: .6em;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    li {
+        padding: 1rem;
+        margin: 0 1rem;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    #nav-bar {
+        display: block;
+    }
+}
