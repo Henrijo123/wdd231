@@ -4,12 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231 | Normalize</title>
+    <title>WDD 231 | Curse Home Page</title>
+    <meta name="description" content="WDD231 Course home page">
+    <meta name="author" content="Henri Joel Gonzalez Gonzalez">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 
 <body>
-    <h1>Hello World!</h1>
+    <header class="header">
+        <img src="images/console.svg" alt="console control logo" width="200" height="200">
+        <span>Henri's site Title</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <div class="container">
+            <section class="box box1">
+                <h2>About Me</h2>
+                <p>My name is Henri and I'm from Uruguay, I borned in a small city called Melo, and I still live there
+                    with my family!
+                    Currently I'm studying software development at BYU-I and taking a course called 'Jovenes a
+                    programar' (JAP) where I'm
+                    learning some javascript and I will learn some testing I love to spend time with my family and
+                    friends.!</p>
+            </section>
+            <section class="box box2">
+                <h2>Student Photo</h2>
+                <img src="images/student-photo.webp " alt="Student photo">
+            </section>
+            <section class="box courses">
+                <h2>Web Certificate Courses</h2>
+                <nav class="filter">
+                    <ul>
+                        <li><a id="all" href="#all">All</a></li>
+                        <li><a id="cse" href="#cse">CSE</a></li>
+                        <li><a id="wdd" href="#wdd">WDD</a></li>
+                    </ul>
+                    <div id="credits">
+                    </div>
+                    <div id="filter">
+                    </div>
+                </nav>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/Henrijo123" target="_blank"><img src="images/github.svg" alt="github"></a>
+            <a href="https://www.linkedin.com/in/henri-gonzalez/" target="_blank"><img src="images/linkedin.svg"
+                    alt="linkedin"></a>
+            <a href="https://www.facebook.com/Henrijo123" target="_blank"><img src="images/facebook.svg"
+                    alt="facebook"></a>
+        </div>
+        <div class="date">
+            <p><span id="currentyear"></span> | Henri Joel Gonzalez Gonzalez | Uruguay</p>
+            <p><span id="lastModified"></span></p>
+        </div>
+    </footer>
 </body>
 
 </html>

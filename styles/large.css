@@ -1,0 +1,72 @@
+@media only screen and (min-width: 500px) {
+
+    :root {
+        --light-color: rgb(233, 196, 255);
+        --medium-color: rgb(238, 192, 230);
+        --dark-color: rgb(66, 0, 110);
+        --text-color: black;
+    }
+
+    #nav-bar {
+        display: flex;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .box2 img {
+        border-radius: 5px;
+        max-width: 200px;
+        height: auto;
+    }
+
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .header {
+        margin: 0 auto;
+    }
+
+    .box1 {
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .box2 {
+        margin-bottom: 1rem;
+    }
+
+    #nav-bar {
+        background-color: var(--light-color);
+    }
+
+    #nav-bar ul {
+        display: flex;
+    }
+
+    #nav-bar a {
+        margin: 0;
+    }
+
+    h3 {
+        width: 100%;
+    }
+
+    #filter {
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
