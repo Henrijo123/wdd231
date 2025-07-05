@@ -124,6 +124,8 @@ li {
 
 .filter ul,
 .filter a {
+    color: var(--text-color);
+    font-size: 1.2em;
     text-decoration: none;
     list-style-type: none;
     margin: 0;
