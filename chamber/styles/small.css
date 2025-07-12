@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+:root {
+    --light-color: #d9fdd5;
+    --alternative-color: #8ACB88;
+    --dark-color: #648381;
+    --darker-color: #575761;
+}
+
+body {
+    font-family: 'Roboto Slab', Helvetica, sans-serif;
+}
+
+header {
+    background-color: var(--alternative-color);
+    padding: 10px 0;
+}
+
+.head {
+    display: grid;
+    grid-template-columns: 54px auto 44px;
+    align-items: center;
+}
+
+header span {
+    font-size: 1.5em;
+}
+
+header img {
+    width: 44px;
+    height: 44px;
+}
+
+.hamburger {
+    color: var(--darker-color);
+    background: none;
+    border: none;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    font-size: 2rem;
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: flex;
+    color: #000;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    background-color: var(--light-color);
+    color: #000;
+}
+
+.current a {
+    background-color: var(--darker-color);
+    color: #fff;
+}
+
+.hide {
+    display: none;
+}
+
+.cards {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.cards div {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.cards img {
+    margin-left: 1rem;
+}
+
+.list a {
+    word-break: break-all;
+
+}
+
+.list {
+    font-size: .8em;
+    display: grid;
+    grid-template-columns: 1fr 1fr .5fr 1fr;
+    padding: 0 1rem;
+    align-items: center;
+    text-align: center;
+}
+
+.list:nth-child(odd) {
+    background-color: var(--light-color);
+}
+
+.type {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.type a {
+    display: flex;
+    padding: 10px;
+    border: 1px dotted var(--darker-color);
+    background-color: var(--dark-color);
+    border-radius: 5px;
+    margin: 0 1rem;
+}
+
+.cards section {
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--light-color);
+    border: 1px solid var(--dark-color);
+    box-shadow: 0 0 5px;
+}
+
+footer {
+    padding: 1rem 0;
+    background-color: var(--alternative-color);
+}
+
+.name {
+    font-weight: bold;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social a {
+    display: flex;
+    padding: 5px;
+    margin: 0 .5rem;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    border: 1px solid var(--darker-color);
+}
+
+.social img {
+    width: 32px;
+    height: 32px;
+}
+
+.social a:hover {
+    background-color: var(--light-color);
+}
+
+footer span,
+header img,
+h1 {
+    margin: .3rem .3rem;
+}

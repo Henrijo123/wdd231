@@ -18,8 +18,8 @@ main {
 
 header {
     display: grid;
-    margin-left: .3rem;
     grid-template-columns: 34px auto 44px;
+    margin-left: .3rem;
     align-items: center;
 }
 

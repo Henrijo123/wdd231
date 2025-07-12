@@ -1,0 +1,43 @@
+@media only screen and (min-width: 400px) {
+
+    main,
+    nav {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    #nav-bar {
+        display: flex;
+    }
+
+    #nav-bar ul {
+        display: flex;
+    }
+
+    #nav-bar a {
+        margin: 0;
+    }
+
+    .list {
+        font-size: 1em;
+    }
+
+    .head {
+        display: grid;
+        grid-template-columns: 54px auto 44px;
+        align-items: center;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    footer .foot {
+        max-width: 900px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+}

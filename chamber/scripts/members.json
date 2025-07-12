@@ -1,0 +1,79 @@
+[
+    {
+        "name": "TechNova Solutions",
+        "address": "Av. Wilson Ferreira Aldunate 1234, Melo, Cerro Largo, Uruguay",
+        "phone": "+598 4642 1234",
+        "website": "https://www.technova.com.uy",
+        "icon": "technova-logo.svg",
+        "membershipLevel": 3,
+        "industry": "Software Development",
+        "founded": 2010,
+        "employees": 120
+    },
+    {
+        "name": "GreenLeaf Organics",
+        "address": "Ruta 8 Km 402, Melo, Cerro Largo, Uruguay",
+        "phone": "+598 4642 5678",
+        "website": "https://www.greenleaforganics.uy",
+        "icon": "greenleaf-icon.svg",
+        "membershipLevel": 2,
+        "industry": "Organic Food Products",
+        "founded": 2015,
+        "employees": 60
+    },
+    {
+        "name": "SkyHigh Drones",
+        "address": "Independencia 890, Melo, Cerro Largo, Uruguay",
+        "phone": "+598 4642 9012",
+        "website": "https://www.skyhighdrones.uy",
+        "icon": "skyhigh-drones.svg",
+        "membershipLevel": 1,
+        "industry": "Drone Technology",
+        "founded": 2018,
+        "employees": 45
+    },
+    {
+        "name": "AquaPure Systems",
+        "address": "Av. Dr. De Herrera 455, Melo, Cerro Largo, Uruguay",
+        "phone": "+598 4642 3344",
+        "website": "https://www.aquapuresystems.uy",
+        "icon": "aqua-logo.svg",
+        "membershipLevel": 2,
+        "industry": "Water Purification",
+        "founded": 2008,
+        "employees": 75
+    },
+    {
+        "name": "EcoBuild Constructors",
+        "address": "Ruta 7 Km 398, Melo, Cerro Largo, Uruguay",
+        "phone": "+598 4642 7788",
+        "website": "https://www.ecobuild.uy",
+        "icon": "ecobuild-icon.svg",
+        "membershipLevel": 3,
+        "industry": "Sustainable Construction",
+        "founded": 2005,
+        "employees": 200
+    },
+    {
+        "name": "BrightPath Education",
+        "address": "José Pedro Varela 321, Melo, Cerro Largo, Uruguay",
+        "phone": "+598 4642 2233",
+        "website": "https://www.brightpathedu.uy",
+        "icon": "brightpath-logo.svg",
+        "membershipLevel": 1,
+        "industry": "Online Education",
+        "founded": 2016,
+        "employees": 90
+    },
+    {
+        "name": "NovaMed Technologies",
+        "address": "Sarandí 159, Melo, Cerro Largo, Uruguay",
+        "phone": "+598 4642 9988",
+        "website": "https://www.novamedtech.uy",
+        "icon": "novamed-icon.svg",
+        "membershipLevel": 3,
+        "industry": "Medical Devices",
+        "founded": 2012,
+        "employees": 150
+    }
+]
