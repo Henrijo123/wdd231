@@ -109,6 +109,7 @@ header img {
     display: grid;
     grid-template-columns: 1fr 1fr .5fr 1fr;
     padding: 0 1rem;
+    margin-bottom: 1rem;
     align-items: center;
     text-align: center;
 }
