@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory | Chamber</title>
-    <meta name="description" content="Chamber of Commerce wdd231 project Directory">
+    <title>Cerro Largo Chamber of Commerce | Directory</title>
+    <meta name="description" content="Cerro Largo Chamber of Commerce Directory cards or list of companies">
     <meta name="author" content="Henri Joel Gonzalez Gonzalez">
     <meta property="og:title" content="Henri's Home Page">
     <meta property="og:description" content="This is the directory of the chamber of Commerce.">
@@ -15,20 +15,23 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/cards.js" defer></script>
 </head>
 
 <body>
-    <header class="header">
-        <div class="head">
-            <img src="images/logo.svg" alt="logo" width="200" height="200">
+    <header>
+        <div>
+            <img src="images/logo.svg" alt="Cerro Largo Chamber of commerce Logo" width="200" height="200">
             <span>Busines Directory</span>
             <button id="ham-btn" class="hamburger"></button>
         </div>
     </header>
-    <nav id="nav-bar" class="navigation">
+    <nav id="nav-bar">
         <ul>
             <li><a href="#">Home</a></li>
             <li class="current"><a href="#">Directory</a></li>
@@ -38,34 +41,33 @@
     </nav>
     <main>
         <h1>Business Directory</h1>
-        <nav class="type">
-            <a id="show-cards" href="#cards"><img src="images/ham.svg" alt="ham-button"></a>
-            <a id="list" href="#list"><img src="images/list.svg" alt="ham-button"></a>
-        </nav>
+        <div class="type">
+            <a id="show-cards" href="#cards"><img src="images/ham.svg" alt="cards-button"></a>
+            <a id="list" href="#list"><img src="images/list.svg" alt="list-button"></a>
+        </div>
         <div id="cards" class="cards"></div>
     </main>
     <footer>
-        <div class="foot">
-            <div>
-                <p><span class="name">Cerro Largo Chamber of Commerce</span></p>
-                <p><span>Av. General Artigas 1234</span></p>
-                <p><span>Melo, Cerro Largo 37000</span></p>
-                <p><span>info@camaracerrrolargo.org.uy</span></p>
-                <p><span>(+598) 4642 1234</span></p>
-            </div>
-            <div class="social">
-                <a href="https://www.facebook.com/Henrijo123" target="_blank"><img src="images/facebook.svg"
-                        alt="facebook"></a>
-                <a href="https://www.linkedin.com/in/henri-gonzalez/" target="_blank"><img src="images/linkedin.svg"
-                        alt="linkedin"></a>
-                <a href="https://github.com/Henrijo123" target="_blank"><img src="images/github.svg" alt="github"></a>
-            </div>
-            <div class="date">
-                <p><span>WDD231 Class Project</span></p>
-                <p><span>Henri Joel Gonzalez Gonzalez</span></p>
-                <p><span id="currentyear"></span>Cerro Largo Chamber of Commerce</p>
-                <p><span id="lastModified"></span></p>
-            </div>
+        <div>
+            <p><span class="name">Cerro Largo Chamber of Commerce</span></p>
+            <p><span>Av. General Artigas 1234</span></p>
+            <p><span>Melo, Cerro Largo 37000</span></p>
+            <p><span>info@camaracerrrolargo.org.uy</span></p>
+            <p><span>(+598) 4642 1234</span></p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/Henrijo123" target="_blank"><img src="images/facebook.svg"
+                    alt="Henri's facebook profile"></a>
+            <a href="https://www.linkedin.com/in/henri-gonzalez/" target="_blank"><img src="images/linkedin.svg"
+                    alt="Henri's linkedin profile"></a>
+            <a href="https://github.com/Henrijo123" target="_blank"><img src="images/github.svg"
+                    alt="Henri's github"></a>
+        </div>
+        <div class="date">
+            <p><span>WDD231 Class Project</span></p>
+            <p><span>Henri Joel Gonzalez Gonzalez</span></p>
+            <p><span id="currentyear"></span>Cerro Largo Chamber of Commerce</p>
+            <p><span id="lastModified"></span></p>
         </div>
     </footer>
 </body>

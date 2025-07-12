@@ -26,7 +26,7 @@
         font-size: 1em;
     }
 
-    .head {
+    header div {
         display: grid;
         grid-template-columns: 54px auto 44px;
         align-items: center;
@@ -34,7 +34,7 @@
         margin: 0 auto;
     }
 
-    footer .foot {
+    footer {
         max-width: 900px;
         margin: 0 auto;
         display: flex;

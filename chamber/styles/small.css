@@ -16,7 +16,7 @@ header {
     padding: 10px 0;
 }
 
-.head {
+header div {
     display: grid;
     grid-template-columns: 54px auto 44px;
     align-items: center;
@@ -47,29 +47,29 @@ header img {
     font-size: 2rem;
 }
 
-.navigation {
+nav {
     display: none;
 }
 
-.navigation.show {
+nav.show {
     display: block;
 }
 
-.navigation ul {
+nav ul {
     display: block;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.navigation a {
+nav a {
     display: flex;
     color: #000;
     padding: 1rem;
     text-decoration: none;
 }
 
-.navigation a:hover {
+nav a:hover {
     background-color: var(--light-color);
     color: #000;
 }
@@ -125,12 +125,15 @@ header img {
 }
 
 .type a {
-    display: flex;
     padding: 10px;
     border: 1px dotted var(--darker-color);
     background-color: var(--dark-color);
     border-radius: 5px;
     margin: 0 1rem;
+}
+
+.type img {
+    margin: 0;
 }
 
 .cards section {
