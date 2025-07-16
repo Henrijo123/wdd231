@@ -7,6 +7,12 @@
     --darker-color: #575761;
 }
 
+.hero {
+    max-width: 900px;
+    width: 100%;
+    height: auto;
+}
+
 body {
     font-family: 'Roboto Slab', Helvetica, sans-serif;
 }
@@ -183,4 +189,9 @@ footer span,
 header img,
 h1 {
     margin: .3rem .3rem;
+}
+
+.container a {
+    position: absolute;
+    display: flex;
 }

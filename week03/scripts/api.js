@@ -5,7 +5,7 @@ const captionDesc = document.querySelector('#description');
 
 const lat = 49.74982197005118;
 const lon = 6.63708875614053;
-const key = "d2d8ccbd4799af176dab91b8debad328";
+const key = "api";
 
 const url = `//api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}&units=metric`
 
