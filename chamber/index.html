@@ -18,9 +18,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="scripts/config.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
-    <script src="scripts/cards.js" defer></script>
+    <script src="scripts/samplecards.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 </head>
 
 <body>
@@ -42,19 +44,39 @@
     <main>
         <div class="container">
             <img class="hero" src="images/hero-img.webp" alt="finger pointing business chart growing" width="900">
-            <a href="">Click here</a>
+            <a href="">Join Us!!</a>
         </div>
-        <h1 class="home">Home</h1>
-        <div class="home">
-            <a id="show-cards" href="#cards"><img src="images/ham.svg" alt="cards-button"></a>
-            <a id="list" href="#list"><img src="images/list.svg" alt="list-button"></a>
+        <h1>Home</h1>
+        <div class="boxes">
+            <div class="box events">
+                <h2>Events</h2>
+            </div>
+            <div class="box weather">
+                <h2>Current Weather</h2>
+                <img id="weather-icon" src="" alt="">
+                <figure>
+                    <p><span id="current-temp"></span></p>
+                    <figcaption id="description"></figcaption>
+                    <p><span id="high"></span></p>
+                    <p><span id="low"></span></p>
+                    <p><span id="humidity"></span></p>
+                    <p><span id="sunrise"></span></p>
+                    <p><span id="sunset"></span></p>
+                </figure>
+            </div>
+            <div class="box forecast">
+                <h2>Weather Forecast</h2>
+                <p><span id="today"></span></p>
+                <p><span id="tomorrow"></span></p>
+                <p><span id="after"></span></p>
+            </div>
         </div>
-        <div id="cards" class="cards"></div>
+        <div id="sample-cards" class="sample-cards"></div>
     </main>
     <footer>
         <div class="back">
             <div>
-                <p><span class="name">Cerro Largo Chamber of Commerce</span></p>
+                <p><span><b>Cerro Largo Chamber of Commerce</b></span></p>
                 <p><span>Av. General Artigas 1234</span></p>
                 <p><span>Melo, Cerro Largo 37000</span></p>
                 <p><span>info@camaracerrrolargo.org.uy</span></p>

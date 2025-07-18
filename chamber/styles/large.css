@@ -1,4 +1,4 @@
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 570px) {
 
     main,
     nav {
@@ -37,7 +37,11 @@
     .back {
         max-width: 900px;
         margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .container a {
+        margin-left: 50px;
     }
 }
