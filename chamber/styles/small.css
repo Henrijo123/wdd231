@@ -7,7 +7,7 @@
     --darker-color: #575761;
 }
 
-.hero {
+.container img {
     max-width: 900px;
     width: 100%;
     height: auto;
