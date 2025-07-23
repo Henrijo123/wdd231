@@ -62,12 +62,26 @@ function displayWeatherResults(data) {
 }
 
 function displayForecastResults(data) {
-    let tomorrowDate = data.list[2].dt_txt;
-    let afterDate = data.list[10].dt_txt;
-    let date = new Date(tomorrowDate.replace(" ", "T"));
-    let afterTime = new Date(afterDate.replace(" ", "T"));
-    let weekDay = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(date);
-    let afterWeekDay = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(afterTime);
+    const tempsByDate = {};
+
+    data.list.forEach(entry => {
+        const dateStr = entry.dt_txt.split(' ')[0];
+        const tempMax = entry.main.temp_max;
+
+        if (!tempsByDate[dateStr]) {
+            tempsByDate[dateStr] = [];
+        }
+
+        tempsByDate[dateStr].push(tempMax);
+    });
+    const sortedDates = Object.keys(tempsByDate).sort();
+
+    const tomorrowDate = sortedDates[2];
+    const afterDate = sortedDates[3];
+    const date = new Date(tomorrowDate.replace(" ", "T"));
+    const afterTime = new Date(afterDate.replace(" ", "T"));
+    const weekDay = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(date);
+    const afterWeekDay = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(afterTime);
     now.innerHTML = `Today: <b>${data.list[0].main.temp_max}</b>ºC`;
     tomorrow.innerHTML = `${weekDay}: <b>${data.list[2].main.temp_max}</b>ºC`;
     after.innerHTML = `${afterWeekDay} <b>${data.list[10].main.temp_max}</b>ºC`;

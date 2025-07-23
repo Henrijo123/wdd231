@@ -197,3 +197,25 @@ footer {
     margin-top: .5rem;
     padding: 1px 0;
 }
+
+dialog {
+    border: 1px solid var(--dark-color);
+    border-radius: 20px;
+    padding: 1rem;
+    background-color: var(--light-color);
+    box-shadow: 0 0 30px var(--medium-color);
+    width: 90%;
+    max-width: 600px;
+}
+
+::backdrop {
+    background-color: #00000080;
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid #0000001a;
+}

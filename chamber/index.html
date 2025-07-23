@@ -21,7 +21,7 @@
     <script src="scripts/config.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
-    <script src="scripts/samplecards.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
     <script src="scripts/weather.js" defer></script>
 </head>
 
@@ -37,14 +37,14 @@
         <ul>
             <li class="current"><a href="#">Home</a></li>
             <li><a href="directory.html">Directory</a></li>
-            <li><a href="#">Join</a></li>
+            <li><a href="join.html">Join</a></li>
             <li><a href="#">Discover</a></li>
         </ul>
     </nav>
     <main>
         <div class="container">
             <img src="images/hero-img.webp" alt="finger pointing business chart growing" width="900">
-            <a href="">Join Us!!</a>
+            <a href="join.html">Join Us!!</a>
         </div>
         <h1>Home</h1>
         <div class="boxes">
@@ -53,16 +53,18 @@
             </div>
             <div class="box weather">
                 <h2>Current Weather</h2>
-                <img id="weather-icon" src="" alt="">
                 <figure>
-                    <p><span id="current-temp"></span></p>
+                    <img id="weather-icon" src="images/favicon.ico" alt="-">
                     <figcaption id="description"></figcaption>
+                </figure>
+                <div>
+                    <p><span id="current-temp"></span></p>
                     <p><span id="high"></span></p>
                     <p><span id="low"></span></p>
                     <p><span id="humidity"></span></p>
                     <p><span id="sunrise"></span></p>
                     <p><span id="sunset"></span></p>
-                </figure>
+                </div>
             </div>
             <div class="box forecast">
                 <h2>Weather Forecast</h2>
@@ -71,7 +73,7 @@
                 <p><span id="after"></span></p>
             </div>
         </div>
-        <div id="sample-cards" class="sample-cards"></div>
+        <div id="spotlight" class="spotlight"></div>
     </main>
     <footer>
         <div class="back">

@@ -16,7 +16,7 @@
         "phone": "+598 4642 5678",
         "website": "greenleaforganics.uy",
         "icon": "greenleaf-icon.svg",
-        "membershipLevel": 2,
+        "membershipLevel": 1,
         "industry": "Organic Food Products",
         "founded": 2015,
         "employees": 60
@@ -38,7 +38,7 @@
         "phone": "+598 4642 3344",
         "website": "aquapuresystems.uy",
         "icon": "aqua-logo.svg",
-        "membershipLevel": 2,
+        "membershipLevel": 1,
         "industry": "Water Purification",
         "founded": 2008,
         "employees": 75
@@ -49,7 +49,7 @@
         "phone": "+598 4642 7788",
         "website": "ecobuild.uy",
         "icon": "ecobuild-icon.svg",
-        "membershipLevel": 3,
+        "membershipLevel": 2,
         "industry": "Sustainable Construction",
         "founded": 2005,
         "employees": 200

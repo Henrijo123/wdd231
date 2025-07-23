@@ -44,4 +44,22 @@
     .container a {
         margin-left: 50px;
     }
+
+    .boxes {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        margin: 1rem 0;
+    }
+
+    .weather {
+        text-align: left;
+    }
+
+    .forecast {
+        text-align: left;
+    }
+
+    .events {
+        text-align: left;
+    }
 }

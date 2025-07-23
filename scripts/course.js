@@ -78,13 +78,17 @@ const courses = [
     }
 ]
 
-const allLink = document.querySelector("#all")
-const cseLink = document.querySelector("#cse")
-const wddLink = document.querySelector("#wdd")
-const filter = document.querySelector("#filter")
-const credits = document.querySelector("#credits")
+const allLink = document.querySelector("#all");
+const cseLink = document.querySelector("#cse");
+const wddLink = document.querySelector("#wdd");
+const credits = document.querySelector("#credits");
+const courseDetails = document.querySelector('#course-details');
+const courseDiv = document.querySelector('#filter')
 
 const courseTemplates = (course) => {
+    courseDiv.addEventListener('click', () => {
+        displayCourseDetails(course);
+    });
     if (course.completed == true) {
         return `<figure>
                     <h3>✔ ${course.subject} ${course.number}</h3>
@@ -94,12 +98,12 @@ const courseTemplates = (course) => {
                     <h3>${course.subject} ${course.number}</h3>
                 </figure>`
     }
-}
+};
 
 function displayCourses(filteredCourses) {
     const html = filteredCourses.map(courseTemplates);
     document.querySelector("#filter").innerHTML = html.join("");
-}
+};
 
 function calculateCredits(filteredCourses) {
     const numbers = filteredCourses.map(credit => credit.credits);
@@ -110,17 +114,36 @@ function calculateCredits(filteredCourses) {
 allLink.addEventListener('click', () => {
     displayCourses(courses);
     calculateCredits(courses)
-})
+});
 
 cseLink.addEventListener('click', () => {
     displayCourses(courses.filter(course => course.subject.includes("CSE")));
     calculateCredits(courses.filter(course => course.subject.includes("CSE")));
-})
+});
 
 wddLink.addEventListener('click', () => {
     displayCourses(courses.filter(course => course.subject.includes("WDD")));
     calculateCredits(courses.filter(course => course.subject.includes("WDD")));
-})
+});
 
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h4>${course.subject} ${course.number}</h4>
+    <h5>${course.title}</h5>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+    courseDetails.showModal();
+
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
+
+displayCourseDetails(courses);
 displayCourses(courses);
 calculateCredits(courses);
