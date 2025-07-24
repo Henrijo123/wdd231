@@ -9,7 +9,7 @@ const now = document.querySelector('#today');
 const tomorrow = document.querySelector('#tomorrow');
 const after = document.querySelector('#after');
 
-const apikey = WEATHER_CONFIG.apiKey;
+const apikey = '250134d43db4065f0de2d71ea5704be6';
 const lat = -32.369198713061536;
 const lon = -54.16417938338321;
 const key = "api";

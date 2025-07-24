@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerro Largo Chamber of Commerce | Join</title>
+    <meta name="description" content="Cerro Largo Chamber of Commerce Join form and membership-levels description">
+    <meta name="author" content="Henri Joel Gonzalez Gonzalez">
+    <meta property="og:title" content="Cerro Largo Chamber of Commerce | Join">
+    <meta property="og:description" content="This is the join page of Cerro Largo chamber of Commerce where you can find membership-levels.">
+    <meta property="og:image" content="https://henrijo123.github.io/wdd231 Chamber/images directoryvg">
+    <meta property="og:url" content="https://henrijo123.github.io/wdd231/chamber/join.html">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="images/logo.svg" alt="Cerro Largo Chamber of commerce Logo" width="200" height="200">
+            <span>Cerro Largo Chamber of Commerce</span>
+            <button id="ham-btn" class="hamburger"></button>
+        </div>
+    </header>
+    <nav id="nav-bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li class="current"><a href="join.html">Join</a></li>
+            <li><a href="#">Discover</a></li>
+        </ul>
+    </nav>
+    <main class="join">
+        <form method="get" action="thankyou.html">
+            <h1>Membership Application Form</h1>
+            <fieldset class="field">
+                <label class="title"><span>First Name<span style="color: #830000">*</span> </span><input type="text"
+                        id="firstName" name="firstName" autocomplete="given-name" required></label>
+                <label class="title"><span> Name<span style="color: #830000">*</span> </span><input type="text"
+                        id="lastName" name="lastName" autocomplete="family-name" required></label>
+                <label class="title">Organizational Title<input type="text" id="organization-title"
+                        name="organization-title" autocomplete="organization-title"
+                        pattern="^[A-Za-z\s\-]{7,}$"></label>
+                <label class="title"><span>Email<span style="color: #830000">*</span></span><input type="email"
+                        id="Email" name="Email" autocomplete="email" placeholder="example@site.com" required></label>
+                <label class="title"><span>Phone Number<span style="color: #830000">*</span></span><input type="tel"
+                        id="phone" name="phone" autocomplete="tel" required></label>
+            </fieldset>
+            <fieldset class="field">
+                <label class="title"><span>Business/Organization's Name<span
+                            style="color: #830000">*</span></span><input type="text" id="organization-name"
+                        name="organization-name" autocomplete="organization" required></label>
+                <section class="title"><span class="member">Membership Level<span style="color: #830000">*</span></span>
+                    <section class="membership-level">
+                        <label class="options">NP Membership<input type="radio" name="membership-level"
+                                required></label>
+                        <label class="options">Bronze Membership <input type="radio" name="membership-level"></label>
+                        <label class="options">Silver Membership <input type="radio" name="membership-level"></label>
+                        <label class="options">Gold Membership <input type="radio" name="membership-level"></label>
+                    </section>
+                </section>
+                <label class="title">Business/Organization's description<textarea name="description" id="description"
+                        placeholder="Text here..."></textarea></label>
+                <label><input type="hidden" name="timestamp" id="timestamp"></label>
+                <input type="submit" name="Send-company-info" value="Send Company Info">
+            </fieldset>
+        </form>
+        <div class="membership">
+            <h1>Membership Levels</h1>
+            <div class="level">
+                <h2>Non Profit Membership Level</h2>
+                <button class="button opne-button" popovertarget="NP">Learn More</button>
+                <dialog class="modal" id="NP" popover>
+                    <div>
+                        <div>
+                            <h3>Non Profit Membership Level</h3>
+                            <button class="close-button" popovertarget="NP" popovertargetaction="hide">❌</button>
+                        </div>
+                        <p>$Free</p>
+                        <ul>
+                            <li>Support for local non profit organizations</li>
+                            <li>Access to community networking events</li>
+                            <li>Listing in the online business directory</li>
+                            <li>Monthly email newsletter</li>
+                            <li>One free workshop per year</li>
+                        </ul>
+                    </div>
+                </dialog>
+            </div>
+            <div class="level">
+                <h2>Bronze Membership Level</h2>
+                <button class="button opne-button" popovertarget="Bronze">Learn More</button>
+                <dialog class="modal" id="Bronze" popover>
+                    <div>
+                        <div>
+                            <h3>Bronze Membership Level</h3>
+                            <button class="close-button" popovertarget="Bronze" popovertargetaction="hide">❌</button>
+                        </div>
+                        <p>$100/year</p>
+                        <ul>
+                            <li>Standard listing in the business directory</li>
+                            <li>Access to 2 exclusive networking events per year</li>
+                            <li>Basic discounts on public events and workshops</li>
+                            <li>Opportunity to display flyers at the chamber office</li>
+                            <li>Limited access to business resources</li>
+                        </ul>
+                    </div>
+                </dialog>
+            </div>
+            <div class="level">
+                <h2>Silver Membership Level</h2>
+                <button class="button opne-button" popovertarget="Silver">Learn More</button>
+                <dialog class="modal" id="Silver" popover>
+                    <div>
+                        <div>
+                            <h3>Silver Membership Level</h3>
+                            <button class="close-button" popovertarget="Silver" popovertargetaction="hide">❌</button>
+                        </div>
+                        <p>$250/year</p>
+                        <ul>
+                            <li>Enhanced listing with logo in the directory</li>
+                            <li>Access to 4 networking events and mixers</li>
+                            <li>Featured in the "Member Spotlight" on the website (random rotation)</li>
+                            <li>10% discount on booth fees at trade shows</li>
+                            <li>Priority registration for training sessions</li>
+                            <li>Access to marketing webinars and toolkits</li>
+                        </ul>
+                    </div>
+                </dialog>
+            </div>
+            <div class="level">
+                <h2>Gold Membership Level</h2>
+                <button class="button opne-button" popovertarget="Gold">Learn More</button>
+                <dialog class="modal" id="Gold" popover>
+                    <div>
+                        <div>
+                            <h3>Gold Membership Level</h3>
+                            <button class="close-button" popovertarget="Gold" popovertargetaction="hide">❌</button>
+                        </div>
+                        <p>$500/year</p>
+                        <ul>
+                            <li>Premium listing with logo and description in the directory</li>
+                            <li>Guaranteed "Member Spotlight" rotation on homepage</li>
+                            <li>Free booth space at 1 annual trade event</li>
+                            <li>Featured post on social media channels</li>
+                            <li>Access to all networking and VIP events</li>
+                            <li>1-on-1 business consulting session annually</li>
+                            <li>Gold badge next to your company name in listings</li>
+                        </ul>
+                    </div>
+                </dialog>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="back">
+            <div>
+                <p><span><b>Cerro Largo Chamber of Commerce</b></span></p>
+                <p><span>Av. General Artigas 1234</span></p>
+                <p><span>Melo, Cerro Largo 37000</span></p>
+                <p><span>info@camaracerrrolargo.org.uy</span></p>
+                <p><span>(+598) 4642 1234</span></p>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/Henrijo123" target="_blank"><img src="images/facebook.svg"
+                        alt="Henri's facebook profile"></a>
+                <a href="https://www.linkedin.com/in/henri-gonzalez/" target="_blank"><img src="images/linkedin.svg"
+                        alt="Henri's linkedin profile"></a>
+                <a href="https://github.com/Henrijo123" target="_blank"><img src="images/github.svg"
+                        alt="Henri's github"></a>
+            </div>
+            <div class="date">
+                <p><span>WDD231 Class Project</span></p>
+                <p><span>Henri Joel Gonzalez Gonzalez</span></p>
+                <p><span id="currentyear"></span>Cerro Largo Chamber of Commerce</p>
+                <p><span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

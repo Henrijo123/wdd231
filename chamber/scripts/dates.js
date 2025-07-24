@@ -1,8 +1,10 @@
 const year = document.querySelector("#currentyear");
-const date = document.querySelector("#lastModified")
+const date = document.querySelector("#lastModified");
+const timestamp = document.querySelector('#timestamp');
 const today = new Date();
 
 year.innerHTML = `&copy<span class="highlight">${today.getFullYear()}</span>`
+timestamp.innerHTML = `<span class="highlight">${today.getFullYear()}</span>`
 
 date.innerHTML = `Last Modification: <span id="lastModified">${new Intl.DateTimeFormat("en-US", {
     dateStyle: "short"
