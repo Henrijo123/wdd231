@@ -1,11 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cerro Largo Chamber of Commerce | Thankyou</title>
+    <meta name="description" content="Cerro Largo Chamber of Commerce Join form and membership-levels description">
+    <meta name="author" content="Henri Joel Gonzalez Gonzalez">
+    <meta property="og:title" content="Cerro Largo Chamber of Commerce | Join">
+    <meta property="og:description"
+        content="This is the join page of Cerro Largo chamber of Commerce where you can find membership-levels.">
+    <meta property="og:image" content="https://henrijo123.github.io/wdd231 Chamber/images directoryvg">
+    <meta property="og:url" content="https://henrijo123.github.io/wdd231/chamber/join.html">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/membership-info.js" defer></script>
 </head>
+
 <body>
-    
+    <header>
+        <div>
+            <img src="images/logo.svg" alt="Cerro Largo Chamber of commerce Logo" width="200" height="200">
+            <span>Cerro Largo Chamber of Commerce</span>
+            <button id="ham-btn" class="hamburger"></button>
+        </div>
+    </header>
+    <nav id="nav-bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li class="current"><a href="join.html">Join</a></li>
+            <li><a href="#">Discover</a></li>
+        </ul>
+    </nav>
+    <main class="thanks">
+        <h2>Thank You for Joining!</h2>
+        <span>
+            <p>We have received your membership application. Here's a summary of your information:</p>
+        </span>
+        <div class="card">
+            <p id="name"></p>
+            <p id="email"></p>
+            <p id="phone"></p>
+            <p id="business-name"></p>
+            <p id="business-level"></p>
+            <p id="date"></p>
+        </div>
+    </main>
+    <footer>
+        <div class="back">
+            <div>
+                <p><span><b>Cerro Largo Chamber of Commerce</b></span></p>
+                <p><span>Av. General Artigas 1234</span></p>
+                <p><span>Melo, Cerro Largo 37000</span></p>
+                <p><span>info@camaracerrrolargo.org.uy</span></p>
+                <p><span>(+598) 4642 1234</span></p>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/Henrijo123" target="_blank"><img src="images/facebook.svg"
+                        alt="Henri's facebook profile"></a>
+                <a href="https://www.linkedin.com/in/henri-gonzalez/" target="_blank"><img src="images/linkedin.svg"
+                        alt="Henri's linkedin profile"></a>
+                <a href="https://github.com/Henrijo123" target="_blank"><img src="images/github.svg"
+                        alt="Henri's github"></a>
+            </div>
+            <div class="date">
+                <p><span>WDD231 Class Project</span></p>
+                <p><span>Henri Joel Gonzalez Gonzalez</span></p>
+                <p><span id="currentyear"></span>Cerro Largo Chamber of Commerce</p>
+                <p><span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>

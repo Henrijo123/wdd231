@@ -62,4 +62,28 @@
     .events {
         text-align: left;
     }
+
+    fieldset {
+        max-width: 500px;
+    }
+
+    label input {
+        max-width: 500px;
+    }
+
+    .options {
+        margin: .8rem 0;
+        flex-direction: row;
+        margin-left: 1rem;
+        margin-right: -1rem;
+    }
+
+    .join {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    input[type='radio'] {
+        margin-right: 17rem;
+    }
 }

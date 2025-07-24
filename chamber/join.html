@@ -8,7 +8,8 @@
     <meta name="description" content="Cerro Largo Chamber of Commerce Join form and membership-levels description">
     <meta name="author" content="Henri Joel Gonzalez Gonzalez">
     <meta property="og:title" content="Cerro Largo Chamber of Commerce | Join">
-    <meta property="og:description" content="This is the join page of Cerro Largo chamber of Commerce where you can find membership-levels.">
+    <meta property="og:description"
+        content="This is the join page of Cerro Largo chamber of Commerce where you can find membership-levels.">
     <meta property="og:image" content="https://henrijo123.github.io/wdd231 Chamber/images directoryvg">
     <meta property="og:url" content="https://henrijo123.github.io/wdd231/chamber/join.html">
     <link rel="stylesheet" href="styles/normalize.css">
@@ -41,35 +42,37 @@
     <main class="join">
         <form method="get" action="thankyou.html">
             <h1>Membership Application Form</h1>
-            <fieldset class="field">
+            <fieldset>
                 <label class="title"><span>First Name<span style="color: #830000">*</span> </span><input type="text"
-                        id="firstName" name="firstName" autocomplete="given-name" required></label>
+                        name="firstName" autocomplete="given-name" required></label>
                 <label class="title"><span> Name<span style="color: #830000">*</span> </span><input type="text"
-                        id="lastName" name="lastName" autocomplete="family-name" required></label>
-                <label class="title">Organizational Title<input type="text" id="organization-title"
-                        name="organization-title" autocomplete="organization-title"
-                        pattern="^[A-Za-z\s\-]{7,}$"></label>
+                        name="lastName" autocomplete="family-name" required></label>
+                <label class="title">Organizational Title<input type="text" name="organization-title"
+                        autocomplete="organization-title" pattern="^[A-Za-z\s\-]{7,}$"></label>
                 <label class="title"><span>Email<span style="color: #830000">*</span></span><input type="email"
-                        id="Email" name="Email" autocomplete="email" placeholder="example@site.com" required></label>
+                        name="Email" autocomplete="email" placeholder="example@site.com" required></label>
                 <label class="title"><span>Phone Number<span style="color: #830000">*</span></span><input type="tel"
-                        id="phone" name="phone" autocomplete="tel" required></label>
+                        name="phone" autocomplete="tel" required></label>
             </fieldset>
-            <fieldset class="field">
+            <fieldset>
                 <label class="title"><span>Business/Organization's Name<span
                             style="color: #830000">*</span></span><input type="text" id="organization-name"
                         name="organization-name" autocomplete="organization" required></label>
                 <section class="title"><span class="member">Membership Level<span style="color: #830000">*</span></span>
                     <section class="membership-level">
-                        <label class="options">NP Membership<input type="radio" name="membership-level"
-                                required></label>
-                        <label class="options">Bronze Membership <input type="radio" name="membership-level"></label>
-                        <label class="options">Silver Membership <input type="radio" name="membership-level"></label>
-                        <label class="options">Gold Membership <input type="radio" name="membership-level"></label>
+                        <label class="options">NP Membership<input type="radio" name="membership-level" required
+                                value="Non Profit Membership"></label>
+                        <label class="options">Bronze Membership <input type="radio" name="membership-level"
+                                value="Bronze Membership"></label>
+                        <label class="options">Silver Membership <input type="radio" name="membership-level"
+                                value="Silver Membership"></label>
+                        <label class="options">Gold Membership <input type="radio" name="membership-level"
+                                value="Gold Membership"></label>
                     </section>
                 </section>
                 <label class="title">Business/Organization's description<textarea name="description" id="description"
                         placeholder="Text here..."></textarea></label>
-                <label><input type="hidden" name="timestamp" id="timestamp"></label>
+                <input type="hidden" name="timestamp" id="timestamp">
                 <input type="submit" name="Send-company-info" value="Send Company Info">
             </fieldset>
         </form>
