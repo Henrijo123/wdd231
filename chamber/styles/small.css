@@ -463,3 +463,77 @@ textarea {
 h2 {
     text-align: center;
 }
+
+#allCards {
+    display: block;
+    justify-self: center;
+}
+
+#allCards div {
+    margin: 1rem;
+    border-radius: 15px;
+    border: 1px solid var(--darker-color);
+    background-color: var(--light-color);
+    overflow: hidden;
+    display: grid;
+    grid-template-areas:
+        "name"
+        "photo"
+        "description"
+        "location";
+}
+
+#allCards div h2 {
+    grid-area: name;
+    text-align: left;
+    padding: 0 1rem;
+}
+
+#allCards div img {
+    width: 100%;
+    grid-area: photo;
+}
+
+#allCards div p {
+    grid-area: description;
+    padding: 0 1rem
+}
+
+#allCards div address {
+    text-align: center;
+    grid-area: location;
+    padding: 0 1rem 1rem 1rem;
+}
+
+#sidebar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#message {
+    width: 250px;
+    padding: 20px;
+    background-color: var(--light-color);
+    border-left: 2px solid var(--dark-color);
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+#message {
+    top: 8%;
+    right: 10%;
+    position: absolute;
+    animation: hidding 5s ease-in forwards;
+}
+
+@keyframes hidding {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        display: none;
+    }
+}

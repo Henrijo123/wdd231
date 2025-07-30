@@ -7,7 +7,7 @@ year.innerHTML = `&copy<span class="highlight">${today.getFullYear()}</span>`
 
 document.addEventListener('DOMContentLoaded', () => {
     if (timestamp) {
-
+        
         const nowISO = new Date().toISOString();
         const data = new Date(nowISO);
         const userFriendly = data.toLocaleString('en-US', {

@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cerro Largo Chamber of Commerce | Directory</title>
-    <meta name="description" content="Cerro Largo Chamber of Commerce Directory cards or list of companies">
+    <title>Cerro Largo Chamber of Commerce | Discover</title>
+    <meta name="description" content="Cerro Largo Chamber of Commerce Discover page, landing page">
     <meta name="author" content="Henri Joel Gonzalez Gonzalez">
-    <meta property="og:title" content="Henri's Home Page">
-    <meta property="og:description" content="This is the directory of the chamber of Commerce.">
+    <meta property="og:title" content="Cerro Largo Chamber of Commerce | Discover">
+    <meta property="og:description" content="This is the Discover page of Cerro Largo chamber of Commerce.">
     <meta property="og:image" content="https://henrijo123.github.io/wdd231 Chamber/images directoryvg">
-    <meta property="og:url" content="https://henrijo123.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://henrijo123.github.io/wdd231/chamber/index.html">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +21,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
-    <script src="scripts/cards.js" defer></script>
+    <script src="scripts/message.js" defer></script>
+    <script src="scripts/discover.js" type="module"></script>
 </head>
 
 <body>
@@ -34,23 +36,23 @@
     <nav id="nav-bar">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li class="current"><a href="#">Directory</a></li>
+            <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
-            <li><a href="discover.html">Discover</a></li>
+            <li class="current"><a href="#">Discover</a></li>
         </ul>
     </nav>
     <main>
-        <h1>Business Directory</h1>
-        <div class="type">
-            <a id="show-cards" href="#cards"><img src="images/ham.svg" alt="cards-button"></a>
-            <a id="list" href="#list"><img src="images/list.svg" alt="list-button"></a>
+        <div id="sidebar">
+            <h1>Discover</h1>
+            <div id="message"></div>
         </div>
-        <div id="cards" class="cards"></div>
+        <div id="allCards">
+        </div>
     </main>
     <footer>
         <div class="back">
             <div>
-                <p><span class="name">Cerro Largo Chamber of Commerce</span></p>
+                <p><span><b>Cerro Largo Chamber of Commerce</b></span></p>
                 <p><span>Av. General Artigas 1234</span></p>
                 <p><span>Melo, Cerro Largo 37000</span></p>
                 <p><span>info@camaracerrrolargo.org.uy</span></p>

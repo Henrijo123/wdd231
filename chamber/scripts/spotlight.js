@@ -1,4 +1,4 @@
-const url = 'scripts/members.json';
+const url = 'data/members.json';
 const cards = document.querySelector('#spotlight');
 
 const displayCompanies = (companies) => {

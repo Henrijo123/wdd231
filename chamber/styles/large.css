@@ -1,8 +1,8 @@
-@media only screen and (min-width: 570px) {
+@media only screen and (min-width: 1025px) {
 
     main,
     nav {
-        max-width: 900px;
+        max-width: 1200px;
         margin: 0 auto;
     }
 
@@ -30,12 +30,12 @@
         display: grid;
         grid-template-columns: 54px auto 44px;
         align-items: center;
-        max-width: 900px;
+        max-width: 1200px;
         margin: 0 auto;
     }
 
     .back {
-        max-width: 900px;
+        max-width: 1200px;
         margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -85,5 +85,31 @@
 
     input[type='radio'] {
         margin-right: 17rem;
+    }
+
+    #allCards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #allCards div {
+        margin: .3rem;
+        width: auto;
+        grid-template-areas:
+            "name name"
+            "photo description"
+            "photo location";
+    }
+
+    #allCards div img {
+        width: 250px;
+    }
+
+    #allCards div h2 {
+        margin: 1rem 0;
+    }
+
+    #message {
+        right: 20%;
     }
 }
