@@ -4,27 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Pelis (Movie Gallery)</title>
+    <title>Gallery - Pelis (Movie Gallery)</title>
     <meta name="description" content="Pelis movie Gallery with the movie database">
     <meta name="author" content="Henri Joel Gonzalez Gonzalez">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Home Page - Pelis">
+    <meta property="og:title" content="Gallery Page - Pelis">
     <meta property="og:description" content="Pelis movie Gallery with the movie database">
     <meta property="og:image" content="https://henrijo123.github.io/wdd231/project/images/wireframe.png">
     <meta property="og:url" content="https://henrijo123.github.io/wdd231/project/index.html">
     <meta property="og:site_name" content="Pelis Movie Gallery">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Home Page - Pelis">
+    <meta name="twitter:title" content="Gallery Page - Pelis">
     <meta name="twitter:description" content="Pelis movie Gallery with the movie database">
     <meta name="twitter:image" content="https://henrijo123.github.io/wdd231/project/images/wireframe.png">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="icon" href="images/favicon.ico">
-    <script src="scripts/films.mjs" type="module"></script>
-    <script src="scripts/favorite-movies.js" type="module"></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/gallery.mjs" type="module"></script>
 </head>
 
 <body>
@@ -35,23 +34,19 @@
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li class="current"><a href="#">Home</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li class="current"><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
     <main>
-        <h2>Home</h2>
-        <div class="box releases">
-            <h2>Movie releases</h2>
-            <div id="releases"></div>
-        </div>
-        <div class="box upcoming">
-            <h2>Upcoming Releases</h2>
-            <div id="upcoming"></div>
-        </div>
+        <h2>Gallery</h2>
         <div class="box favorite">
-            <h2>Favorite Movies</h2>
-            <div id="favorite"></div>
+            <h2>Filters</h2>
+            <div id="genre-filters"></div>
+        </div>
+        <div class="box releases">
+            <h2>Movies</h2>
+            <div id="gallery"></div>
         </div>
     </main>
     <footer>

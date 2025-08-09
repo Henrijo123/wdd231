@@ -9,7 +9,7 @@
     --text: #E1E8EB;
     --primary: #00ADB5;
     --secondary: #393E46;
-    --hover: #00FFF5;
+    --hover: #b9fffd;
 }
 
 body {
@@ -17,35 +17,197 @@ body {
     color: var(--text);
 }
 
-section h2 {
+header,
+nav,
+main,
+footer {
+    margin: 0 1rem;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 60px auto 22px;
+}
+
+header img {
+    width: auto;
+}
+
+header span {
+    font-size: 2em;
+    text-align: center;
+    align-self: center;
+}
+
+.hamburger {
+    color: var(--dark-color);
+    background: none;
+    border: none;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    font-size: 2rem;
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: flex;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    padding: 1rem;
+    text-decoration: none;
+}
+
+li {
+    margin: 0;
+}
+
+li a:hover {
+    color: var(--hover);
+}
+
+.current {
+    background-color: var(--secondary);
+}
+
+div h2 {
     color: var(--primary);
     background-color: var(--background);
     border: 5px solid var(--secondary);
     border-radius: 20px;
-    display: inline;
     padding: .5rem;
 }
 
-.background {
-    color: var(--background);
-    background-color: var(--text);
-}
-
-.text {
+.box {
+    background-color: var(--secondary);
+    border-radius: 20px;
     color: var(--text);
+}
+
+.box div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.box div figure {
+    margin: 0 auto 1rem auto;
+    overflow: hidden;
+    width: 340px;
     background-color: var(--background);
+    padding: .5rem;
+    border: 1px solid var(--primary);
+    box-shadow: 0 0 10px var(--primary);
+    border-radius: 20px;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
 }
 
-.primary {
-    color: var(--primary);
+.box div figure h3 {
+    align-self: center;
 }
 
-.secondary {
-    color: var(--secondary);
-    background-color: var(--text);
+.open-button>img:hover {
+    transform: scale(1.2);
 }
 
-.hover {
+.box div figure img {
+    transition: transform 1.3s ease;
+}
+
+figcaption {
+    border-radius: 20px;
+    background-color: var(--background);
+    z-index: 1;
+}
+
+img {
+    width: 300px;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
     color: var(--hover);
+}
+
+dialog {
+    color: var(--primary);
+    box-shadow: 0 0 10px var(--primary);
+    max-width: 70%;
+    padding: 0;
     background-color: var(--background);
+}
+
+.modal .info {
+    justify-items: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal .info img {
+    animation: none;
+    transition: none;
+}
+
+dialog button {
+    margin: .5rem .5rem .5rem auto;
+    padding: .5rem .5rem 0 0;
+    color: var(--hover);
+}
+
+dialog a {
+    color: var(--hover);
+    margin-bottom: .3rem;
+}
+
+dialog p {
+    color: var(--text);
+}
+
+.info>div {
+    margin-bottom: 1rem;
+}
+
+dialog h3 {
+    text-align: right;
+}
+
+dialog::backdrop {
+    background-color: var(--background);
+    opacity: 50%;
+}
+
+.favorite a {
+    color: var(--text);
+    text-align: center;
+    margin: .5rem 0;
+}
+
+.favorite a:hover {
+    color: var(--hover);
 }

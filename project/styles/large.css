@@ -1,0 +1,17 @@
+@media only screen and (min-width: 1025px) {
+    .modal .info {
+        justify-items: center;
+        align-items: center;
+        display: grid;
+        grid-template-areas:
+            'title title photo button'
+            'title title photo none'
+            'title title photo none'
+            'description description genre none'
+            'description description genre none';
+    }
+
+    dialog {
+        max-width: 800px;
+    }
+}
